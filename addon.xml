@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="context.deletermover" name="File Delete or Move" version="1.0.0" provider-name="ka24det">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.deletermover" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.context.item" library="addon.py">
+    <item>
+      <label>32000</label>
+      <visible>Container.Content(movies)|Container.Content(episodes)</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Delete or move movies and tv shows</summary>
+    <description lang="en">Delete files or move them to a folder</description>
+    <disclaimer lang="en">This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Visit the website for details.</disclaimer>
+    <license>Creative Commons Attribution-ShareAlike 4.0 International</license>
+    <source>https://github.com/ka24det/context.deletermover</source>
+  </extension>
+</addon>
